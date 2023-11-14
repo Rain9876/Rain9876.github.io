@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+{{ content }}
+
+<h3 class="fw-bold border-bottom pb-3 mb-5">Education</h3>
+{% for university in site.data.settings.education %}
+<div class="row g-5 mb-5">
+  <div class="col-md-6">
+    <p><h5>{{ university.name }}</h5></p>
+    <p>{{ university.title }}</p>
+    <p>{{ university.department }}</p>
+<!--    <p><a href="{{ site.github.url }}/education/{{ university.url }}">Link</a></p>-->
+<!--    <p><a href="{{ university.url }}">Link</a></p>-->
+  </div>
+  <div class="col-md-6">
+    <img src="{{ site.github.url }}/{{ university.image }}" alt="Contact" width="100%">
+  </div>
+</div>
+{% endfor %}

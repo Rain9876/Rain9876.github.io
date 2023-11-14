@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<div class="row g-5 mb-5">
+  <div class="col-md-4">
+    <img src="{{ site.github.url }}/assets/img/profile.jpg" alt="Home" class="blur-on-hover" width="80%">
+  </div>
+  <div class="col-md-8">
+    <h3 class="fw-bold">About me</h3>
+    <p>{{ content | safe}}</p>
+  </div>
+</div>
+
+
+<div class="row g-5 mb-5">
+  <div class="col-md-12">
+    <h3 class="fw-bold border-bottom pb-3 mb-5">Current Research</h3>
+    {% for activity in site.data.settings.activity %}
+
+        {% if activity.url == "" %}
+        <span class="fw-bold" style="font-size: 18px;">{{ activity.title}}</span> <span>  ({{ activity.date }})</span>
+        {% else %}
+        <span class="fw-bold"  style="font-size: 18px;"> <a href="{{ site.github.url }}/{{ activity.url }}">{{ activity.title }}</a> </span> <span>  ({{ activity.date }})</span>
+        {% endif %}
+      <p></p>
+    {% endfor %}
+  </div>
+</div>
+
+{% include publications.html %}
+
+{% include contact.html %}

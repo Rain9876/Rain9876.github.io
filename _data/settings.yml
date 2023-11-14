@@ -1,0 +1,35 @@
+menu:
+- {name: 'Home', url: '/'}
+- {name: 'Education', url: '/education'}
+- {name: 'Publications', url: '/publications'}
+#- {name: 'Works', url: '/courses'}
+- {name: 'CV', url: '/cv'}
+#- {name: 'Contact', url: '/contact'}
+
+people:
+- {name: 'Primary Investigator', title: 'Researcher', department: 'Physics & Astronomy', institution: 'Some University', institution_address: '1 Main Street, Canada', phone: '(000) 000-0000', email: 'hello@university.edu', office: 'Science Building 505', image: 'assets/img/primary-investigator.jpg', url: 'primary-investigator'}
+- {name: 'Lab Technician', title: 'Researcher', department: 'Physics & Astronomy', institution: 'Some University', institution_address: '1 Main Street, Canada', phone: '(000) 000-0000', email: 'hello@university.edu', office: 'Science Building 505', image: 'assets/img/lab-technician.jpg', url: 'lab-technician'}
+- {name: 'Graduate Student', title: 'Researcher', department: 'Physics & Astronomy', institution: 'Some University', institution_address: '1 Main Street, Canada', phone: '(000) 000-0000', email: 'hello@university.edu', office: 'Science Building 505', image: 'assets/img/graduate-student.jpg', url: 'graduate-student'}
+
+education:
+  - {name: 'University of California, Irvine', title: 'PhD', department: 'Computer Science', institution: 'Some University', institution_address: 'California, USA', phone: '(000) 000-0000', email: 'hello@university.edu', office: 'Science Building 505', image: 'assets/img/UCI.jpg', url: 'https://uci.edu/'}
+  - {name: 'Imperial College London', title: 'Postgraduate', department: 'Advanced Computing', institution: 'Some University', institution_address: 'London, UK', phone: '(000) 000-0000', email: 'hello@university.edu', office: 'Science Building 505', image: 'assets/img/ICL.jpg', url: 'https://www.imperial.ac.uk/'}
+  - {name: "King's College London", title: 'Undergraduate', department: 'Computer Science', institution: 'Some University', institution_address: 'London, UK', phone: '(000) 000-0000', email: 'hello@university.edu', office: 'Science Building 505', image: 'assets/img/KCL.jpg', url: 'https://www.kcl.ac.uk/'}
+
+courses:
+- {name: '5G Simulation with ChatGPT', url: '5G-Simulation-with-ChatGPT'}
+#- {name: 'Quantum Mechanics', url: 'quantum-mechanics'}
+#- {name: 'Stellar Structures', url: 'stellar-structures'}
+
+social:
+  - {icon: 'mail', link: 'mailto:songyr888@gmail.com'}
+  - {icon: 'github', link: 'https://github.com/Rain9876'}
+  - {icon: 'linkedin', link: 'https://linkedin.com/in/yurunsong9876'}
+
+activity:
+  - {title: "Chinese Llama2 on Court Case Instruct Prompt Tuning",  url: '', date: "Sep 2023 --" }
+  - {title: "Decentralized LLM Inference on Edge Devices", url: '', date: "Jan 2023  --" }
+  - {title: "5G Simulation with ChatGPT",  url: 'courses/5G-Simulation-with-ChatGPT/5G_Simulation.pdf', date: "Dec 2022 ~ Jun 2023"}
+
+contacts:
+- {name: 'Yurun Song', title: 'PhD Student', department: 'Computer Science', institution: 'University of California, Irvine, US', email: 'songyr888@gmail.com', phone: "(949)527-8385", github: 'https://github.com/Rain9876/'}

@@ -1,0 +1,11 @@
+featured:
+- {name: 'PCMID: Multi-Intent Detection through Supervised Prototypical Contrastive Learning', author: 'Y. Song, J. Zhao, I. G. Harris, S. B. Koehler and A. Abdullah', conference: 'Findings of the 2023 Conference on Empirical Methods in Natural Language Processing', date: '-', url: '/publications/pcmid.pdf'}
+- {name: 'GAP-Gen: Guided Automatic Python Code Generation', author: 'J. Zhao, Y. Song, J. Wang, and I. G. Harris', conference: 'Proceedings of the 17th Conference of the European Chapter of the Association for Computational Linguistics: Student Research Workshop', date: 'Jan 2022', url: 'http://arxiv.org/pdf/2201.08810.pdf'}
+- {name: 'SentSim: Crosslingual Semantic Evaluation of Machine Translation', author: 'Y. Song, J. Zhao and Lucia Specia', conference: 'Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics', date: 'Jun 2021', url: 'http://aclanthology.org/2021.naacl-main.252.pdf'}
+
+index:
+- {name: 'PCMID: Multi-Intent Detection through Supervised Prototypical Contrastive Learning', author: 'Y. Song, J. Zhao, I. G. Harris, S. B. Koehler and A. Abdullah', conference: 'Findings of the 2023 Conference on Empirical Methods in Natural Language Processing', date: '-', url: '/publication/pcmid.pdf'}
+- {name: 'GAP-Gen: Guided Automatic Python Code Generation', author: 'J. Zhao, Y. Song, J. Wang, and I. G. Harris', conference: 'Proceedings of the 17th Conference of the European Chapter of the Association for Computational Linguistics: Student Research Workshop', date: 'Jan 2022', url: 'http://arxiv.org/pdf/2201.08810.pdf'}
+- {name: 'SentSim: Crosslingual Semantic Evaluation of Machine Translation', author: 'Y. Song, J. Zhao and Lucia Specia', conference: 'Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics', date: 'Jun 2021', url: 'http://aclanthology.org/2021.naacl-main.252.pdf'}
+- {name: 'Text Generation in Clinical NLP', author: 'Y. Song and K. Sun', conference: '', date: 'Jun 2020', url: '/publications/TextGenerator.pdf'}
+- {name: 'EfficientNet with RandAuguemnt for Diabetic Retinopathy Detection', author: 'Y. Song and A. Alansary', conference: '', date: 'Apr 2020', url: '/publications/report.pdf'}
