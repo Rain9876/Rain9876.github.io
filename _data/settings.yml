@@ -22,13 +22,14 @@ courses:
 #- {name: 'Stellar Structures', url: 'stellar-structures'}
 
 social:
-  - {icon: 'mail', link: 'mailto:songyr888@gmail.com'}
+  - {icon: 'google', link: 'mailto:songyr888@gmail.com'}
   - {icon: 'github', link: 'https://github.com/Rain9876'}
   - {icon: 'linkedin', link: 'https://linkedin.com/in/yurunsong9876'}
+  - {icon: 'wpforms', link: 'https://scholar.google.com/citations?hl=en&user=XMQTUvYAAAAJ'}
 
 activity:
   - {title: "Chinese Llama2 on Court Case Instruct Prompt Tuning",  url: '', date: "Sep 2023 --" }
-  - {title: "Decentralized LLM Inference on Edge Devices", url: '', date: "Jan 2023  --" }
+  - {title: "Decentralized LLM Inference on Edge Devices", url: 'http://arxiv.org/pdf/2312.00388.pdf', date: "Jan 2023  --" }
   - {title: "5G Simulation with ChatGPT",  url: 'courses/5G-Simulation-with-ChatGPT/5G_Simulation.pdf', date: "Dec 2022 ~ Jun 2023"}
 
 contacts:
