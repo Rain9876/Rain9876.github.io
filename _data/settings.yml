@@ -28,9 +28,9 @@ social:
   - {icon: 'wpforms', link: 'https://scholar.google.com/citations?hl=en&user=XMQTUvYAAAAJ'}
 
 activity:
-  - {title: "Chinese Llama2 on Court Case Instruct Prompt Tuning",  url: '', date: "Sep 2023 --" }
-  - {title: "Decentralized LLM Inference on Edge Devices", url: 'http://arxiv.org/pdf/2312.00388.pdf', date: "Jan 2023  --" }
-  - {title: "5G Simulation with ChatGPT",  url: 'courses/5G-Simulation-with-ChatGPT/5G_Simulation.pdf', date: "Dec 2022 ~ Jun 2023"}
+  - {title: "GUI Agent with Multi-turn Reinforcement Learning",  url: '', date: "Current" }
+  - {title: "AMAQ: Adaptive Mixed-bit Activation Quantization for Collaborative Parameter Efficient Fine-tuning", url: 'https://arxiv.org/pdf/2510.05468', date: "Current" }
+  - {title: "ShareLoRA: Parameter Efficient and Robust Large Language Model Fine-tuning via Shared Low-Rank Adaptation", url: 'https://arxiv.org/pdf/2406.10785', date: "Sep 2023 -- Jun 2024" }
 
 contacts:
 - {name: 'Yurun Song', title: 'PhD Student', department: 'Computer Science', institution: 'University of California, Irvine, US', email: 'songyr888@gmail.com', phone: "(949)527-8385", github: 'https://github.com/Rain9876/'}
