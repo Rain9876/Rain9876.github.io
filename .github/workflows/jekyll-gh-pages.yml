@@ -27,16 +27,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: Rain9876/checkout@v4
       - name: Setup Pages
-        uses: actions/configure-pages@v5
+        uses: Rain9876/configure-pages@v5
       - name: Build with Jekyll
-        uses: actions/jekyll-build-pages@v1
+        uses: Rain9876/jekyll-build-pages@v1
         with:
           source: ./
           destination: ./_site
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: Rain9876/upload-pages-artifact@v3
 
   # Deployment job
   deploy:
@@ -48,4 +48,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: Rain9876/deploy-pages@v4
