@@ -17,6 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       REPO_PATH: ${{ github.workspace }}/site
+      BUNDLE_PATH: vendor/bundle
     steps:
       - name: Clone repository
         env:
@@ -35,8 +36,6 @@ jobs:
 
       - name: Install gems
         working-directory: ${{ env.REPO_PATH }}
-        env:
-          BUNDLE_PATH: vendor/bundle
         run: bundle install --jobs 4 --retry 3
 
       - name: Build site
