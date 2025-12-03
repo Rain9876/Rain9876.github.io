@@ -1,0 +1,65 @@
+name: Build and publish Jekyll site
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: "jekyll-pages"
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    env:
+      REPO_PATH: ${{ github.workspace }}/site
+    steps:
+      - name: Clone repository
+        env:
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          rm -rf "${REPO_PATH}"
+          git clone --depth 1 "https://x-access-token:${TOKEN}@github.com/${{ github.repository }}.git" "${REPO_PATH}"
+
+      - name: Install Ruby toolchain
+        run: |
+          set -euo pipefail
+          sudo apt-get update
+          sudo apt-get install -y ruby-full build-essential zlib1g-dev
+          gem install bundler --no-document
+
+      - name: Install gems
+        working-directory: ${{ env.REPO_PATH }}
+        env:
+          BUNDLE_PATH: vendor/bundle
+        run: bundle install --jobs 4 --retry 3
+
+      - name: Build site
+        working-directory: ${{ env.REPO_PATH }}
+        env:
+          JEKYLL_ENV: production
+        run: bundle exec jekyll build --trace
+
+      - name: Publish to gh-pages branch
+        env:
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DEPLOY_BRANCH: gh-pages
+        run: |
+          set -euo pipefail
+          DEPLOY_DIR="${{ github.workspace }}/deploy"
+          rm -rf "${DEPLOY_DIR}"
+          mkdir -p "${DEPLOY_DIR}"
+          cp -a "${{ env.REPO_PATH }}/_site/." "${DEPLOY_DIR}/"
+          cd "${DEPLOY_DIR}"
+          git init
+          git config user.name "${{ github.actor }}"
+          git config user.email "${{ github.actor }}@users.noreply.github.com"
+          git add .
+          git commit -m "Deploy ${GITHUB_SHA}"
+          git branch -M "${DEPLOY_BRANCH}"
+          git push --force "https://x-access-token:${TOKEN}@github.com/${{ github.repository }}.git" "${DEPLOY_BRANCH}"
